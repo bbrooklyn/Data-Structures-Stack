@@ -34,7 +34,6 @@ class Stack:
         self.pointer = self.pointer + 1
         self.__simulate_memory()
         self.stack[self.pointer] = value # End of the stack.
-
         
     def pop(self):
         self.pointer = self.pointer-1 # Moves the pointer below the last item/value, rendering it out of scope, the value can then be overwritten or ignored.
@@ -42,5 +41,3 @@ class Stack:
         
     def peek(self):
         return self.stack[self.pointer]
-    
-            
